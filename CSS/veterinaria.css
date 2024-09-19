@@ -1,0 +1,437 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+div,
+h1,
+h2,
+h3,
+h4,
+nav,
+ul,
+li,
+a,
+section,
+footer,
+main {
+  box-sizing: border-box;
+}
+
+#header {
+  /*background-color: #5dc1b9;*/
+  background-color: #ffffff;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  z-index: 999;
+}
+
+.header__contenedor {
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  max-width: 5rem;
+}
+
+.nav {
+  padding: 5px;
+  width: 50vw;
+}
+
+.nav__lista {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.nav__items {
+  list-style-type: none;
+}
+
+.nav__links {
+  color: #1576be;
+  text-decoration: none;
+}
+
+.nav__inicio {
+  background-color: #ecb44a;
+  color: #ffffff;
+  padding: 0.8em;
+  border-radius: 1.5em;
+}
+
+.nav__links:hover {
+  background-color: #ecb44a;
+  color: #ffffff;
+  padding: 0.8em;
+  border-radius: 1.5em;
+  transition: 0.8s;
+}
+
+.banner {
+  background-image: url(../img/purina-esterilización-de-mascotas.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 60%;
+  display: flex;
+}
+
+.banner__overlay {
+  background-color: #000006a6;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__titulo {
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+.banner__parrafo {
+  color: #ffffff;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+
+.banner__button {
+  width: 6vw;
+  border-radius: 2em;
+  border: none;
+  padding: 1em;
+  background-color: #1576be;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.banner__button:hover {
+  background-color: #ecb44a;
+  transition: 0.5;
+}
+
+.fixed {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  box-shadow: 0px 0px 3px gray;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.fixed__cuerpo {
+  background-color: #128c7e;
+  display: flex;
+  position: fixed;
+  padding: 0.2em;
+  gap: 10px;
+  border-radius: 2em;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.fixed__img {
+  filter: invert(1);
+  width: 1.2em;
+}
+
+.fixed__parrafo {
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+.main {
+  width: 100vw;
+}
+
+.main__titulo {
+  font-size: 2.3em;
+  text-align: center;
+  margin-bottom: -1em;
+}
+
+.main__span {
+  color: #1576be;
+}
+
+.section__servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 5rem;
+}
+
+.servicio__cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.servicio__seccion {
+  padding: 4em;
+  min-width: 23vw;
+  text-align: center;
+  box-shadow: 0px 0px 4px #808080;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.servicio__img {
+  width: 10em;
+  text-align: center;
+  border-radius: 5px;
+  filter: brightness(0) saturate(100%) invert(33%) sepia(46%) saturate(4137%)
+    hue-rotate(188deg) brightness(87%) contrast(84%);
+}
+
+.servicio__seccion:hover {
+  background-color: #ecb44a;
+  transition: 0.5s;
+}
+
+.section__nosotros {
+  background-color: #1576be;
+  width: 100vw;
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contenedor__nosotros {
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+}
+
+.nosotros__titutlo {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.nosotros__parrafo {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-top: -1em;
+  text-align: justify;
+}
+
+.nosotros__button {
+  width: 10rem;
+  padding: 1em;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #ecb44a;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+
+.nosotros__img {
+  max-width: 35rem;
+  border-radius: 1.2em;
+}
+
+.section__visitarnos {
+  max-width: 100vw;
+}
+
+.subtitulo__visitarnos {
+  text-align: center;
+  gap: 10px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.span__visitarnos {
+  color: #1576be;
+}
+
+.section__cuerpo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2em;
+}
+
+.cuerpo__contenedor {
+  border-radius: 0.7em;
+  box-shadow: 0px 0px 4px #808080;
+  max-width: 23vw;
+  display: flex;
+  padding: 1em;
+  gap: 8px;
+}
+
+.contenedor__contenido {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido__img {
+  max-width: 8rem;
+  max-height: 7vh;
+  border: 1px solid #1576be;
+  border-radius: 10em;
+  padding: 0.7em;
+  filter: brightness(0) saturate(100%) invert(34%) sepia(42%) saturate(2081%)
+    hue-rotate(179deg) brightness(96%) contrast(89%);
+}
+
+.contenido__subtitulo {
+  font-size: 1.4em;
+  margin-bottom: -0.2em;
+}
+
+.contenido__parrafo {
+  color: #808080;
+}
+
+.section__adiestramiento {
+  max-width: 100vw;
+  height: 35vh;
+  background-color: #ecb44a;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.adiestramiento__cuerpo {
+  max-width: 25vw;
+  margin-top: 0.7em;
+  padding: 1.2em;
+}
+
+.adiestramiento__titulo {
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.adiestramiento__parrafo {
+  color: white;
+  font-size: 1.2em;
+}
+
+.adiestramiento__img {
+  width: 50%;
+  display: flex;
+  transform: skewX(-1deg);
+  background-image: url(../img/tecnicas_de_adiestramiento_canino_21135_orig.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer {
+  background-color: #1576be;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__cuerpo {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.footer__contenedores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15%;
+  height: 25vh;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.2em;
+}
+
+.footer__link:hover {
+  color: #ecb44a;
+}
+
+.footer__logo {
+  width: 8rem;
+}
+
+.footer__enlace {
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer__enlace:hover {
+  filter: brightness(0) saturate(50%) invert(47%) sepia(0%) saturate(69%)
+    hue-rotate(236deg) brightness(99%) contrast(81%);
+}
+
+.footer__redes {
+  filter: invert(1);
+  width: 2rem;
+  text-align: center;
+  margin-top: 0.2em;
+}
+
+.footer__contenedor-enlaces {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__subtitulo {
+  color: #ffffff;
+}
+
+.footer__derechos {
+  display: flex;
+  justify-content: center;
+}
+
+.derechos__parrafos {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.footer__contactanos-img {
+  width: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.contactanos__svg {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.footer__contactanos-parrafos {
+  width: 10vw;
+  padding: 3em;
+}
+
+.footer__contactanos {
+  display: flex;
+  width: 15vw;
+}
+
+.contactanos__parrafos {
+  color: #ffffff;
+}
